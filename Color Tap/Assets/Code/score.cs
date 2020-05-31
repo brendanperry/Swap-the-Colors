@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using Prime31;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 public class score : MonoBehaviour {
 
@@ -50,7 +50,9 @@ public class score : MonoBehaviour {
 		if (Score > highScore) {
 			highScore = Score;
 			PlayerPrefs.SetInt ("highScore", highScore);
-			GameCenterBinding.reportScore (highScore, "topScore");
+			Social.ReportScore(highScore, "topScore", success => {
+				Debug.Log("Score reported");
+			});
 		}
 
 		highScoreText.GetComponent<Text> ().text = "BEST: " + highScore;

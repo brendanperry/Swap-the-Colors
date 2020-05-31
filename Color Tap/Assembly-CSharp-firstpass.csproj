@@ -65,13 +65,6 @@
      <Compile Include="Assets\Plugins\GameCenter\GameCenterRetrieveScoresResult.cs" />
      <Compile Include="Assets\Plugins\GameCenter\GameCenterScore.cs" />
      <Compile Include="Assets\Plugins\GameCenter\GKPlayer.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\demo\StoreKitEventListener.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\demo\StoreKitGUIManager.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\StoreKitBinding.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\StoreKitDownload.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\StoreKitManager.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\StoreKitProduct.cs" />
-     <Compile Include="Assets\Plugins\StoreKit\StoreKitTransaction.cs" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
      <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
      <None Include="Assets\Plugins\Android\unityads\build.xml" />
@@ -86,11 +79,11 @@
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/brendanperry/Desktop/Color Tap/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>/Users/brendanperry/Desktop/Color Tap/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>/Users/brendanperry/repos/Swap-the-Colors/Color Tap/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/Users/brendanperry/repos/Swap-the-Colors/Color Tap/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -282,7 +275,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="P31RestKit">
- <HintPath>/Users/brendanperry/Desktop/Color Tap/Assets/Plugins/P31RestKit.dll</HintPath>
+ <HintPath>/Users/brendanperry/repos/Swap-the-Colors/Color Tap/Assets/Plugins/P31RestKit.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Users/brendanperry/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

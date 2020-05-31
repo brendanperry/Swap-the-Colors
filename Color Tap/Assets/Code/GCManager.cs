@@ -1,14 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Prime31;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 public class GCManager : MonoBehaviour {
 
 	void Start () {
-		GameCenterBinding.authenticateLocalPlayer ();
+		Social.localUser.Authenticate(success => {
+            if (success)
+                Debug.Log("authenticated");
+            else
+                Debug.Log("Failed to authenticate");
+        });
 	}
 
 	public void OnClick () {
-		GameCenterBinding.showLeaderboardWithTimeScope (GameCenterLeaderboardTimeScope.AllTime);
+		if(Social.localUser.authenticated)
+			GameCenterPlatform.ShowLeaderboardUI("topScore", UnityEngine.SocialPlatforms.TimeScope.AllTime);
 	}
 }

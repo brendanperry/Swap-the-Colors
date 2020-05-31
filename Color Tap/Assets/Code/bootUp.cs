@@ -1,20 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using Prime31;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 public class bootUp : MonoBehaviour {
 
 	public string scene;
 
 	void Awake () {
-		GameCenterBinding.authenticateLocalPlayer ();
+		GameCenterPlatform.ShowDefaultAchievementCompletionBanner(true);
+		Social.localUser.Authenticate(success => {
+            if (success)
+                Debug.Log("authenticated");
+            else
+                Debug.Log("Failed to authenticate");
+        });
 	}
 
 	void Start () {
 
-		string[] products = new string[] { "removeAds_1" };
-		StoreKitBinding.requestProductData (products);
+		//string[] products = new string[] { "removeAds_1" };
+		//StoreKitBinding.requestProductData (products);
 
 		StartCoroutine (begin ());
 	}
